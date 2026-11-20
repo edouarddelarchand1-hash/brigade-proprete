@@ -137,6 +137,11 @@ h2{font-size:clamp(2.1rem,4.6vw,3.5rem);margin-top:.9rem}
 .ba.touche .ba-aide{opacity:0;animation:none}
 @keyframes pulse{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.05)}}
 .ba-leg{max-width:1040px;margin:1.1rem auto 0;font-size:.9rem;color:var(--gris);text-align:center}
+.ba-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,3vw,2.2rem);max-width:980px;margin-inline:auto}
+.ba-duo figure{margin:0}
+.ba.v{aspect-ratio:3/4;max-width:none}
+.ba-duo .ba-leg{margin-top:.9rem}
+@media (max-width:720px){.ba-duo{grid-template-columns:minmax(0,1fr);max-width:440px}}
 
 /* bandeau défilant */
 .defile{background:var(--turquoise-f);overflow:hidden;white-space:nowrap;padding:1.05rem 0}
@@ -457,7 +462,7 @@ footer{background:var(--ardoise);padding-block:clamp(3rem,6vw,4.5rem) 2rem;font-
 <div class="wrap hero-in"><div class="hero-txt">
 <span class="eyebrow reveal">Nettoyage tertiaire et industriel · Strasbourg</span>
 <h1 class="titre"><span class="mask" style="--i:0"><span>Des locaux nets,</span></span><span class="mask" style="--i:1"><span>un quotidien <span class="swipe">serein.</span></span></span></h1>
-<p class="lead reveal" style="--d:.2s">Entretien de locaux sous contrat, sites industriels, vitrerie, façades. Une équipe de proximité, menée par un frère et une sœur, qui intervient à Strasbourg et dans toute l'Eurométropole.</p>
+<p class="lead reveal" style="--d:.2s">Entretien de locaux sous contrat, sites industriels, vitrerie, façades. Une équipe de proximité, menée par un «&nbsp;tandem familial&nbsp;», qui intervient à Strasbourg et dans toute l'Eurométropole.</p>
 <div class="actions reveal" style="--d:.3s"><a class="btn btn-plein" href="contact.html">Demander un devis gratuit <span class="fl" aria-hidden="true">→</span></a><a class="btn btn-ligne" href="services.html">Nos services</a></div>
 <ul class="points reveal" style="--d:.4s"><li>Entretien sous contrat</li><li>Sites industriels</li><li>Vitrerie</li><li>Façades et graffitis</li></ul>
 </div></div></section>
@@ -465,13 +470,8 @@ footer{background:var(--ardoise);padding-block:clamp(3rem,6vw,4.5rem) 2rem;font-
 
 <section class="s givre"><div class="wrap">
 <div class="entete"><div><span class="eyebrow reveal">Avant / après</span><h2 class="titre "><span class="mask" style="--i:0"><span>Voyez la</span></span><span class="mask" style="--i:1"><span><em>différence.</em></span></span></h2></div>
-<p class="texte reveal" style="max-width:26rem">Faites glisser le curseur : à gauche la salle avant notre passage, à droite le résultat.</p></div>
-<div class="ba reveal" style="--pos:50%"><img class="ba-img" src="img/apres.jpg" alt="Salle de bureaux après le passage de la brigade" loading="lazy">
-<div class="ba-av"><img class="ba-img" src="img/avant.jpg" alt="La même salle avant le nettoyage" loading="lazy"></div>
-<span class="ba-tag av">Avant</span><span class="ba-tag ap">Après</span>
-<div class="ba-poignee" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></div>
-<input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Faire glisser pour comparer la salle avant et après le nettoyage">
-<span class="ba-aide" aria-hidden="true">← Glissez pour comparer →</span></div>
+<p class="texte reveal" style="max-width:26rem">Faites glisser le curseur : à gauche l'état avant notre passage, à droite le résultat.</p></div>
+<div class="ba-duo"><figure class="reveal" style="--d:0s"><div class="ba v" style="--pos:50%"><img class="ba-img" src="img/porte-apres.jpg" alt="La même porte après nettoyage, le graffiti a disparu" width="840" height="1120" loading="lazy"><div class="ba-av"><img class="ba-img" src="img/porte-avant.jpg" alt="Porte d'entrée recouverte d'un graffiti blanc" width="840" height="1120" loading="lazy"></div><span class="ba-tag av">Avant</span><span class="ba-tag ap">Après</span><div class="ba-poignee" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></div><input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Faire glisser pour comparer la porte avant et après le retrait du graffiti"><span class="ba-aide" aria-hidden="true">← Glissez pour comparer →</span></div><figcaption class="ba-leg">Porte tagguée, <strong>graffiti retiré</strong></figcaption></figure><figure class="reveal" style="--d:.12s"><div class="ba v" style="--pos:50%"><img class="ba-img" src="img/solaires-apres.jpg" alt="Les mêmes panneaux solaires après nettoyage, vitres limpides" width="840" height="1120" loading="lazy"><div class="ba-av"><img class="ba-img" src="img/solaires-avant.jpg" alt="Panneaux solaires en toiture, ternes et voilés" width="840" height="1120" loading="lazy"></div><span class="ba-tag av">Avant</span><span class="ba-tag ap">Après</span><div class="ba-poignee" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></div><input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Faire glisser pour comparer les panneaux solaires avant et après le nettoyage"><span class="ba-aide" aria-hidden="true">← Glissez pour comparer →</span></div><figcaption class="ba-leg">Panneaux solaires en toiture, <strong>vitres remises à neuf</strong></figcaption></figure></div>
 </div></section>
 
 <section class="s"><div class="wrap">
@@ -479,9 +479,9 @@ footer{background:var(--ardoise);padding-block:clamp(3rem,6vw,4.5rem) 2rem;font-
 <a class="lien reveal" href="services.html">Tous les services <span class="fl" aria-hidden="true">→</span></a></div>
 <div class="cartes">
 <a class="carte-s reveal" href="services.html" style="--d:0s"><div class="wipe " style="--d:0.1s"><img src="img/bureaux.jpg" alt="Agent d'entretien nettoyant un bureau" style="object-position:88% 50%" loading="lazy"></div><div class="corps"><h3>Bureaux et locaux tertiaires</h3><p>Entretien sous contrat de vos espaces de travail, sanitaires et parties communes.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
-<a class="carte-s reveal" href="services.html" style="--d:0.08s"><div class="wipe " style="--d:0.18s"><img src="img/chantier.jpg" alt="Équipe nettoyant un plateau après travaux" style="object-position:50% 50%" loading="lazy"></div><div class="corps"><h3>Sites industriels et fins de chantier</h3><p>Aspiration, dépoussiérage et remise à neuf de grands volumes.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
-<a class="carte-s reveal" href="services.html" style="--d:0.16s"><div class="wipe " style="--d:0.26s"><img src="img/vitrerie.jpg" alt="Agent nettoyant une façade vitrée" style="object-position:40% 40%" loading="lazy"></div><div class="corps"><h3>Vitrerie</h3><p>Vitres, baies et façades vitrées, à l'intérieur comme à l'extérieur.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
-<a class="carte-s reveal" href="services.html" style="--d:0.24s"><div class="wipe " style="--d:0.33999999999999997s"><img src="img/moquette.jpg" alt="Nettoyage d'une moquette par injection-extraction" style="object-position:40% 60%" loading="lazy"></div><div class="corps"><h3>Remise en état et façades</h3><p>Moquettes, sols, façades, graffitis : on redonne aux surfaces leur aspect d'origine.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
+<a class="carte-s reveal" href="services.html" style="--d:0.08s"><div class="wipe " style="--d:0.18s"><img src="img/industriel.jpg" alt="Agent en combinaison jaune nettoyant un équipement industriel à la haute pression" style="object-position:60% 55%" width="1400" height="1050" loading="lazy"></div><div class="corps"><h3>Sites industriels et fins de chantier</h3><p>Aspiration, dépoussiérage et remise à neuf de grands volumes.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
+<a class="carte-s reveal" href="services.html" style="--d:0.16s"><div class="wipe " style="--d:0.26s"><img src="img/nacelle.jpg" alt="Nacelle élévatrice pour nettoyer la façade vitrée d'un bâtiment" style="object-position:50% 40%" width="1400" height="1051" loading="lazy"></div><div class="corps"><h3>Vitrerie</h3><p>Vitres, baies et façades vitrées, à l'intérieur comme à l'extérieur.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
+<a class="carte-s reveal" href="services.html" style="--d:0.24s"><div class="wipe " style="--d:0.33999999999999997s"><img src="img/terrasse-planches.jpg" alt="Terrasse en bois nettoyée à moitié : la différence est visible planche par planche" style="object-position:50% 50%" width="1200" height="900" loading="lazy"></div><div class="corps"><h3>Remise en état et façades</h3><p>Moquettes, sols, façades, graffitis : on redonne aux surfaces leur aspect d'origine.</p><span class="lien">En savoir plus <span class="fl" aria-hidden="true">→</span></span></div></a>
 </div></div></section>
 
 <section class="s nuit famille"><div class="wrap"><div class="deux">
